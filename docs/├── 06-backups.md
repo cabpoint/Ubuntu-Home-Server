@@ -103,24 +103,19 @@ tar -tf /opt/backups/server-backup.tar.gz
 
 ---
 
-## Backup Contents
-
-The backup currently contains:
-
-- Nginx configuration
-- OpenSSH configuration
-- Netplan configuration
-- Compressed archive
-
-These files represent the current infrastructure configuration of the home server.
-
----
-
 ## Security Considerations
 
 The backup archive contains system configuration files.
 
 If the archive is stored externally, appropriate access controls should be applied to prevent unauthorized access.
+
+---
+
+## Restore Procedure
+
+Example:
+
+sudo tar -xzf /opt/backups/server-backup.tar.gz -C /
 
 ---
 
@@ -137,7 +132,7 @@ If the archive is stored externally, appropriate access controls should be appli
 
 ## Future Improvements
 
-- Automate backups using a Bash script
+- Automate backup execution using Cron
 - Schedule backups with Cron
 - Encrypt backup archives
 - Implement backup rotation
