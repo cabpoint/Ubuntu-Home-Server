@@ -130,29 +130,7 @@ After deploying Nginx, HTTP and HTTPS traffic were permitted using the **Nginx F
 
 This configuration was implemented using the official Ubuntu UFW documentation.
 
-- Ubuntu Server Guide – UFW
-- UFW Manual
-
----
-
-## Commands Used
-
-```bash
-sudo ufw allow OpenSSH
-sudo ufw allow 'Nginx Full'
-sudo ufw enable
-sudo ufw status verbose
-sudo ufw status numbered
-```
-
----
-
-## File Locations
-
-| File | Purpose |
-|------|---------|
-| /etc/ufw/user.rules | User-defined firewall rules |
-| /etc/default/ufw | Default UFW configuration |
+- UFW Manual - https://help.ubuntu.com/community/UFW
 
 ---
 
