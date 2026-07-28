@@ -18,7 +18,8 @@ The environment is hosted inside VirtualBox and is used for learning Linux admin
 
 The Ubuntu Server is hosted inside VirtualBox.
 
-<img width="1895" height="889" alt="image" src="https://github.com/user-attachments/assets/46cfad80-cea8-46cc-8bb5-a440fc873b85" />
+<img width="816" height="619" alt="image" src="https://github.com/user-attachments/assets/bcf3c4f8-e00b-49a8-abdc-3da72a1a6da5" />
+
 
 
 ---
