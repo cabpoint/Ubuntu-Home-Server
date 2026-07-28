@@ -39,6 +39,7 @@ The server is configured with a static IPv4 address.
 <img width="825" height="229" alt="image" src="https://github.com/user-attachments/assets/382ab3d0-6ce4-4b0b-91f0-c2ca8cb3b752" />
 
 
+
 | Parameter | Value |
 |-----------|-------|
 | IP Address | 192.168.0.150 |
