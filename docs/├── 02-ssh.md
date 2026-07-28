@@ -131,3 +131,15 @@ To improve security and prepare the server for future hardening, SSH key authent
 This configuration was implemented using the official ssh documentation.
 
 https://www.openssh.org/manual.html
+
+---
+
+## Commands Used
+
+systemctl status ssh
+
+ssh-keygen
+
+ssh-copy-id
+
+ssh kali@192.168.0.150
