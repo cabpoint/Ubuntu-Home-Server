@@ -51,9 +51,9 @@ The server is configured with a static IPv4 address.
 
 | Service | Status | Purpose |
 |----------|--------|---------|
-| OpenSSH | Installed | Remote administration |
-| UFW | Enabled | Firewall |
-| Nginx | Installed | Reverse Proxy / Web Server |
+| OpenSSH | Running | Remote administration |
+| UFW | Active | Firewall |
+| Nginx | Running | Reverse Proxy / Web Server |
 
 ---
 
