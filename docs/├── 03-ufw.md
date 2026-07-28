@@ -2,7 +2,7 @@
 
 ## Objective
 
-Configure and verify the Uncomplicated Firewall (UFW) to protect the Ubuntu Server while allowing only the required network services.
+Configure and verify the Uncomplicated Firewall (UFW) to secure the Ubuntu Server while allowing only the services required for remote administration and web hosting.
 
 ---
 
@@ -13,52 +13,41 @@ Configure and verify the Uncomplicated Firewall (UFW) to protect the Ubuntu Serv
 | Operating System | Ubuntu Server 26.04 LTS |
 | Firewall | UFW |
 | Server IP | 192.168.0.150 |
-| Allowed Service | OpenSSH |
 
 ---
 
 ## Why UFW?
 
-A firewall helps reduce the attack surface of the server by allowing only explicitly permitted network traffic.
+UFW (Uncomplicated Firewall) provides a simple interface for managing Linux firewall rules.
 
-For this home lab, SSH access is required while all other unsolicited incoming connections remain blocked.
-
----
-
-## Installation
-
-Verify that UFW is installed.
-
-```bash
-sudo ufw status
-```
-
-If required, install UFW.
-
-```bash
-sudo apt install ufw
-```
+For this home lab, it is used to restrict incoming connections while allowing only the services that are intentionally exposed.
 
 ---
 
-## Configuration
+## Verify Installation
 
-Allow SSH before enabling the firewall.
-
-```bash
-sudo ufw allow OpenSSH
-```
-
-Enable the firewall.
-
-```bash
-sudo ufw enable
-```
-
-Verify the configuration.
+Verify that UFW is installed and enabled.
 
 ```bash
 sudo ufw status verbose
+```
+
+---
+
+## Firewall Configuration
+
+The following services were allowed before enabling the firewall.
+
+```bash
+sudo ufw allow OpenSSH
+sudo ufw allow 'Nginx Full'
+sudo ufw enable
+```
+
+Verify the active configuration.
+
+```bash
+sudo ufw status numbered
 ```
 
 ---
@@ -71,58 +60,75 @@ sudo ufw status verbose
 sudo ufw status verbose
 ```
 
-<img width="488" height="263" alt="image" src="https://github.com/user-attachments/assets/b7196363-41fa-4728-97b6-0ec24df451c4" />
+<img width="490" height="264" alt="image" src="https://github.com/user-attachments/assets/b236eacd-dcf2-43bd-b993-dc6ce69a997d" />
 
 
 ---
 
-### Active Rules
+### Active Firewall Rules
 
 ```bash
 sudo ufw status numbered
 ```
 
-<img width="455" height="214" alt="image" src="https://github.com/user-attachments/assets/9a734793-6870-461f-bf76-22cb0ba1a265" />
-
+<img width="455" height="214" alt="image" src="https://github.com/user-attachments/assets/4abb7744-dcef-4780-90ef-9e6d0de4a06e" />
 
 ---
 
-## Current Rules
+## Default Policy
+
+The firewall is configured with the following default behaviour.
+
+| Direction | Policy |
+|-----------|--------|
+| Incoming | Deny |
+| Outgoing | Allow |
+| Routed | Disabled |
+
+---
+
+## Current Firewall Rules
 
 | Port | Protocol | Purpose |
 |------|----------|---------|
 | 22 | TCP | OpenSSH |
+| 80 | TCP | HTTP (Nginx) |
+| 443 | TCP | HTTPS (Nginx) |
+
+Both IPv4 and IPv6 rules are enabled.
 
 ---
 
 ## Implementation Notes
 
-Before enabling the firewall, the OpenSSH service was explicitly allowed to prevent accidental loss of remote access.
+Before enabling UFW, SSH access was allowed to ensure the server remained accessible remotely.
+
+After deploying Nginx, HTTP and HTTPS traffic were permitted using the **Nginx Full** application profile.
 
 ---
 
 ## Future Improvements
 
-- Allow HTTP (80) for Nginx
-- Allow HTTPS (443)
-- Review firewall rules regularly
-- Restrict access to specific IP addresses where appropriate
+- Restrict SSH access to trusted IP addresses
+- Review firewall rules after deploying additional services
+- Configure Fail2Ban to reduce brute-force attacks
+- Periodically audit firewall rules
 
 ---
 
 ## What I Learned
 
-- Why a firewall is essential for Linux servers
-- How default firewall policies affect incoming connections
-- Why SSH should be allowed before enabling UFW
-- How to verify active firewall rules
-- How to inspect firewall configuration using UFW
+- How UFW manages firewall rules on Ubuntu
+- Why SSH should be allowed before enabling the firewall
+- How application profiles such as **Nginx Full** simplify firewall management
+- How to verify firewall configuration using `ufw status`
+- How default firewall policies affect incoming and outgoing traffic
 
 ---
 
 ## References
 
-The configuration was implemented using the official Ubuntu UFW documentation.
+This configuration was implemented using the official Ubuntu UFW documentation.
 
 - Ubuntu Server Guide – UFW
 - UFW Manual
@@ -133,6 +139,7 @@ The configuration was implemented using the official Ubuntu UFW documentation.
 
 ```bash
 sudo ufw allow OpenSSH
+sudo ufw allow 'Nginx Full'
 sudo ufw enable
 sudo ufw status verbose
 sudo ufw status numbered
@@ -152,6 +159,8 @@ sudo ufw status numbered
 ## Verification Checklist
 
 - [x] Firewall enabled
+- [x] Default incoming policy set to Deny
 - [x] SSH access preserved
-- [x] OpenSSH rule configured
+- [x] HTTP traffic allowed
+- [x] HTTPS traffic allowed
 - [x] Firewall rules verified
