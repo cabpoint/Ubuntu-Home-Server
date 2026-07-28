@@ -98,7 +98,6 @@ http://192.168.0.150
 
 The custom homepage loaded successfully.
 
-**Screenshot:**
 <img width="312" height="199" alt="image" src="https://github.com/user-attachments/assets/ceb71199-a444-419f-b1ac-f23f5c842227" />
 
 
