@@ -111,3 +111,9 @@ sudo netplan apply
 - How to inspect network interfaces
 - How to verify routing configuration
 - Why infrastructure services require a fixed IP address
+
+## References
+
+The configuration was based on the official Netplan documentation and adapted to the requirements of this home lab environment.
+
+- https://manpages.ubuntu.com/manpages/noble/man5/netplan.5.html?utm_source=chatgpt.com
