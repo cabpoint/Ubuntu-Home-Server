@@ -2,9 +2,7 @@
 
 ## Overview
 
-This document describes the network layout of my Ubuntu Home Server lab.
-
-The environment is hosted inside VirtualBox and is used for learning Linux administration, networking, and infrastructure concepts.
+This document explains the network architecture of my Ubuntu Home Server lab, including the virtualized environment, network configuration, and the services currently running on the system.
 
 ---
 
@@ -59,10 +57,9 @@ The server is configured with a static IPv4 address.
 
 ---
 
-## Learning Outcomes
+## What I Learned
 
-- Understanding network topology
-- Virtualization using VirtualBox
-- Static IP configuration
-- Remote administration using SSH
-- Linux network inspection
+- How VirtualBox networking differs from a physical server
+- How to configure a static IP using Netplan
+- How Linux identifies network interfaces (enp0s3)
+- How to inspect network configuration using ip addr and ip route
