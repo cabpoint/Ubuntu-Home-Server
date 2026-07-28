@@ -1,98 +1,140 @@
 # 🖥️ Ubuntu Home Server
 
-A personal home lab created to develop practical Linux system administration, networking, and infrastructure skills. This project is my learning environment where I build, configure, and document services commonly used in real-world server administration.
+A personal infrastructure home lab built to learn Linux system administration, networking, security, containerization, and server management through hands-on practice.
+
+Every service is implemented, verified, and documented with screenshots and implementation notes.
 
 ---
 
-## 🚀 Current Features
+## 📸 Infrastructure Overview
 
-* Ubuntu Server 26.04 LTS
-* Static IP configuration
-* SSH remote access using key authentication
-* VirtualBox virtual machine
-* Basic network configuration
-* Regular system updates and package management
+<img width="310" height="610" alt="network-topology" src="https://github.com/user-attachments/assets/8460b789-6dca-46de-bf2a-de82ac404691" />
+
+---
+
+## 🎯 Project Goals
+
+- Build a secure Ubuntu Server environment
+- Learn Linux system administration
+- Practice infrastructure documentation
+- Deploy common server services
+- Develop practical Infrastructure & Systems Engineering skills
+
+---
+
+## 🚀 Infrastructure
+
+| Component | Status |
+|-----------|:------:|
+| Ubuntu Server | ✅ |
+| Static IP | ✅ |
+| SSH | ✅ |
+| UFW Firewall | ✅ |
+| Nginx | ✅ |
+| Docker | ✅ |
+| Manual Backups | ✅ |
+| Docker Compose | 🚧 |
+| Reverse Proxy | 🚧 |
+| Fail2Ban | 🚧 |
+| WireGuard VPN | 🚧 |
+| Monitoring | 🚧 |
+
+---
+
+## 📚 Documentation
+
+| Document |
+|----------|
+| [00 - Network Topology](docs/00-network-topology.md) |
+| [01 - Static IP](docs/01-static-ip.md) |
+| [02 - SSH](docs/02-ssh.md) |
+| [03 - UFW](docs/03-ufw.md) |
+| [04 - Nginx](docs/04-nginx.md) |
+| [05 - Docker](docs/05-docker.md) |
+| [06 - System Backups](docs/06-system-backups.md) |
 
 ---
 
 ## 🛠️ Technologies
 
-* Ubuntu Server
-* Linux CLI
-* OpenSSH
-* VirtualBox
-* Networking Fundamentals
+- Ubuntu Server
+- Linux CLI
+- OpenSSH
+- UFW
+- Nginx
+- Docker
+- Bash
+- VirtualBox
+- Git
+- Markdown
 
 ---
 
-## 📋 System Specifications
+## 💻 Hardware
 
 | Component | Specification |
-| --------- | ------------- |
-| CPU       | 4 vCPUs       |
-| Memory    | 4 GB RAM      |
-| Storage   | 15 GB SSD     |
+|-----------|---------------|
+| CPU | 4 vCPUs |
+| Memory | 4 GB RAM |
+| Storage | 15 GB SSD |
 
 ---
 
-## 🌐 Network Configuration
+## 🌐 Network
 
-| Setting    | Value         |
-| ---------- | ------------- |
-| IP Address | 192.168.1.151 |
-| Gateway    | 192.168.1.1   |
-| DNS        | 1.1.1.1       |
-
----
-
-## 📚 What I've Learned
-
-* Installing and configuring Ubuntu Server
-* Configuring a static IP address
-* Setting up SSH for remote administration
-* Working with VirtualBox networking
-* Basic Linux system management
-* Command-line administration
+| Setting | Value |
+|---------|-------|
+| IP Address | 192.168.0.150 |
+| Gateway | 192.168.0.1 |
+| DNS | 1.1.1.1, 1.0.0.1 |
 
 ---
 
-## 🎯 Roadmap
+## 💡 Skills Demonstrated
 
-* [ ] SSH hardening
-* [ ] Configure UFW firewall
-* [ ] Install and configure Fail2Ban
-* [ ] Deploy Docker
-* [ ] Learn Docker Compose
-* [ ] Configure Nginx
-* [ ] Set up a reverse proxy
-* [ ] Automate backups with `cron` and `rsync`
-* [ ] Learn `systemd` service management
-* [ ] Add monitoring tools
-* [ ] Document every configuration step
+- Linux system administration
+- Network configuration
+- Secure remote access (SSH)
+- Firewall management (UFW)
+- Web server deployment (Nginx)
+- Containerization (Docker)
+- Backup management
+- Infrastructure documentation
 
 ---
 
-## 📖 Documentation
+## 🗺️ Roadmap
 
-As I continue learning, this repository will include detailed guides covering:
-
-* SSH configuration
-* Firewall setup
-* Docker deployment
-* Nginx configuration
-* Backup automation
-* Troubleshooting
-* Networking concepts
+- [x] Ubuntu Server
+- [x] Static IP
+- [x] SSH
+- [x] UFW
+- [x] Nginx
+- [x] Docker
+- [x] Manual Backups
+- [ ] Docker Compose
+- [ ] Reverse Proxy
+- [ ] Fail2Ban
+- [ ] WireGuard VPN
+- [ ] Monitoring
+- [ ] Backup Automation
 
 ---
 
-| Service | Purpose |
-|---------|----------|
-| OpenSSH | Remote administration |
-| Nginx | Reverse proxy |
-| UFW | Firewall |
-| Docker | Container runtime |
-| Portainer | Docker management |
+## 📂 Repository Structure
 
-> **Status:** 🚧 Work in Progress
-> This repository evolves as I learn Linux system administration and infrastructure engineering through hands-on practice.
+```
+Ubuntu-Home-Server/
+├── docs/
+├── images/
+├── scripts/
+└── README.md
+```
+
+---
+
+## 📈 Project Status
+
+This repository is actively maintained as I continue building my home infrastructure lab.
+
+Each completed service includes implementation details, verification steps, screenshots, and references.
