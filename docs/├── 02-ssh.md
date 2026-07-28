@@ -119,11 +119,10 @@ To improve security and prepare the server for future hardening, SSH key authent
 
 ## What I Learned
 
-- How SSH encrypts remote connections
-- Difference between password and key-based authentication
-- How public/private key authentication works
-- How to verify the SSH service status
-- How to securely access a Linux server remotely
+- How SSH uses public/private key authentication
+- How to verify that the SSH service is running
+- How to securely connect to a Linux server from Windows
+- Why key authentication is preferred over passwords
 
 ---
 
