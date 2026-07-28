@@ -99,13 +99,11 @@ cat ~/.ssh/authorized_keys
 
 ## Problems Encountered
 
-### Problem
+### Initial Authentication
 
-Password authentication was initially used instead of SSH keys.
+Initially the server accepted password authentication.
 
-### Solution
-
-Generated an SSH key pair and copied the public key to the server using `ssh-copy-id`.
+To improve security and prepare the server for future hardening, SSH key authentication was configured using an RSA/Ed25519 key pair and `ssh-copy-id`.
 
 ---
 
