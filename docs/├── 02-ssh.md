@@ -68,7 +68,8 @@ ssh kali@192.168.0.150
 systemctl status ssh
 ```
 
-<img width="672" height="116" alt="image" src="https://github.com/user-attachments/assets/227c367d-99f6-4bc9-aea9-170c89550bc7" />
+<img width="671" height="239" alt="image" src="https://github.com/user-attachments/assets/64d7c810-a14e-4d0f-842e-c70b434aa0ab" />
+
 
 
 ---
