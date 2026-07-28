@@ -2,7 +2,7 @@
 
 ## Objective
 
-Configure secure remote access to the Ubuntu Server using OpenSSH and public key authentication.
+Configure and verify secure remote access to the Ubuntu Server using OpenSSH and public key authentication.
 
 ---
 
@@ -20,7 +20,7 @@ Configure secure remote access to the Ubuntu Server using OpenSSH and public key
 
 ## Why SSH?
 
-SSH (Secure Shell) allows encrypted remote administration of Linux systems.
+SSH is the primary method used to remotely administer this Ubuntu Server without requiring direct access to the virtual machine console.
 
 Using SSH keys instead of passwords provides stronger authentication and helps protect against password-based attacks.
 
@@ -28,7 +28,7 @@ Using SSH keys instead of passwords provides stronger authentication and helps p
 
 ## Installation
 
-Verify that the OpenSSH server is installed.
+Verify that the OpenSSH service is installed and running.
 
 ```bash
 sudo systemctl status ssh
@@ -109,11 +109,11 @@ To improve security and prepare the server for future hardening, SSH key authent
 
 ## Future Improvements
 
-- Disable password authentication
 - Disable root login
-- Change the default SSH port (optional)
+- Disable password authentication
 - Configure Fail2Ban
-- Restrict SSH access using UFW
+- Restrict SSH access with UFW
+- Change the default SSH port (optional)
 
 ---
 
@@ -128,18 +128,34 @@ To improve security and prepare the server for future hardening, SSH key authent
 
 ## References
 
-This configuration was implemented using the official ssh documentation.
+The configuration was implemented using the official OpenSSH documentation.
 
-https://www.openssh.org/manual.html
+- OpenSSH Manual – https://www.openssh.org/manual.html
+- Ubuntu Server Guide – OpenSSH
 
 ---
 
 ## Commands Used
 
+```bash
 systemctl status ssh
-
 ssh-keygen
-
-ssh-copy-id
-
+ssh-copy-id kali@192.168.0.150
 ssh kali@192.168.0.150
+```
+
+## File Locations
+
+| File | Purpose |
+|------|---------|
+| /etc/ssh/sshd_config | SSH server configuration |
+| ~/.ssh/authorized_keys | Stores authorized public keys |
+
+---
+
+## Verification Checklist
+
+- [x] SSH service is running
+- [x] Remote connection established
+- [x] Public key authentication configured
+- [x] Server reachable from Windows client
