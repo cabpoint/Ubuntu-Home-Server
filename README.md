@@ -1,28 +1,33 @@
 # 🖥️ Ubuntu Home Server
 
-A personal infrastructure home lab built to learn Linux system administration, networking, security, containerization, and server management through hands-on practice.
+A personal infrastructure home lab built to develop practical Linux system administration, networking, security, and infrastructure engineering skills.
 
-Every service is implemented, verified, and documented with screenshots and implementation notes.
+The purpose of this project is to build, configure, verify, and document a Linux server using technologies commonly found in production environments. Every completed component is documented with implementation details, verification steps, screenshots, and references.
 
 ---
 
 ## 📸 Infrastructure Overview
 
-<img width="310" height="610" alt="network-topology" src="https://github.com/user-attachments/assets/8460b789-6dca-46de-bf2a-de82ac404691" />
+<img width="310" height="610" alt="network-topology" src="https://github.com/user-attachments/assets/d286025d-b0e4-4163-bad4-d8d64c3343d4" />
 
 ---
 
 ## 🎯 Project Goals
 
-- Build a secure Ubuntu Server environment
-- Learn Linux system administration
-- Practice infrastructure documentation
-- Deploy common server services
+This project focuses on learning how to:
+
+- Configure and administer Ubuntu Server
+- Secure remote access using SSH
+- Manage network and firewall configuration
+- Deploy web services using Nginx
+- Run applications with Docker
+- Implement backup and recovery strategies
+- Build good documentation habits
 - Develop practical Infrastructure & Systems Engineering skills
 
 ---
 
-## 🚀 Infrastructure
+## 🚀 Infrastructure Status
 
 | Component | Status |
 |-----------|:------:|
@@ -42,6 +47,8 @@ Every service is implemented, verified, and documented with screenshots and impl
 ---
 
 ## 📚 Documentation
+
+Every configuration performed on this server is documented.
 
 | Document |
 |----------|
@@ -64,13 +71,14 @@ Every service is implemented, verified, and documented with screenshots and impl
 - Nginx
 - Docker
 - Bash
-- VirtualBox
 - Git
+- GitHub
 - Markdown
+- VirtualBox
 
 ---
 
-## 💻 Hardware
+## 💻 System Specifications
 
 | Component | Specification |
 |-----------|---------------|
@@ -80,7 +88,7 @@ Every service is implemented, verified, and documented with screenshots and impl
 
 ---
 
-## 🌐 Network
+## 🌐 Network Configuration
 
 | Setting | Value |
 |---------|-------|
@@ -94,40 +102,54 @@ Every service is implemented, verified, and documented with screenshots and impl
 
 - Linux system administration
 - Network configuration
-- Secure remote access (SSH)
-- Firewall management (UFW)
+- Static IP configuration
+- SSH remote administration
+- Firewall configuration (UFW)
 - Web server deployment (Nginx)
-- Containerization (Docker)
-- Backup management
+- Docker container deployment
+- Configuration backups
 - Infrastructure documentation
+- Troubleshooting and verification
 
 ---
 
 ## 🗺️ Roadmap
 
-- [x] Ubuntu Server
-- [x] Static IP
-- [x] SSH
-- [x] UFW
-- [x] Nginx
-- [x] Docker
-- [x] Manual Backups
+- [x] Ubuntu Server Installation
+- [x] Static IP Configuration
+- [x] SSH Configuration
+- [x] UFW Firewall
+- [x] Nginx Web Server
+- [x] Docker Installation
+- [x] Manual Configuration Backups
 - [ ] Docker Compose
 - [ ] Reverse Proxy
 - [ ] Fail2Ban
 - [ ] WireGuard VPN
-- [ ] Monitoring
-- [ ] Backup Automation
+- [ ] Cron Backup Automation
+- [ ] System Monitoring
+- [ ] Systemd Services
 
 ---
 
 ## 📂 Repository Structure
 
-```
+```text
 Ubuntu-Home-Server/
+│
 ├── docs/
+│   ├── 00-network-topology.md
+│   ├── 01-static-ip.md
+│   ├── 02-ssh.md
+│   ├── 03-ufw.md
+│   ├── 04-nginx.md
+│   ├── 05-docker.md
+│   └── 06-system-backups.md
+│
 ├── images/
+│
 ├── scripts/
+│
 └── README.md
 ```
 
@@ -135,6 +157,8 @@ Ubuntu-Home-Server/
 
 ## 📈 Project Status
 
-This repository is actively maintained as I continue building my home infrastructure lab.
+🚧 **Work in Progress**
 
-Each completed service includes implementation details, verification steps, screenshots, and references.
+This repository is actively maintained as I continue expanding my home lab.
+
+Each completed service is implemented, verified, documented, and supported with screenshots to demonstrate practical understanding rather than simply following installation guides.
