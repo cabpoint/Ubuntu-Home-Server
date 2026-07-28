@@ -21,18 +21,15 @@ The goal was to understand how Nginx serves web content, how server blocks are c
 
 ## Why Nginx?
 
-Nginx is a lightweight, high-performance web server commonly used for serving websites, reverse proxying applications, and load balancing.
+Nginx was selected because it will later act as the reverse proxy for Docker applications running on the server.
 
-For this home lab, it is currently used to serve static web content and will later be configured as a reverse proxy for Docker applications.
+Using Nginx from the beginning avoids replacing the web server later in the project.
 
 ---
 
 ## Installation
 
-```bash
-sudo apt update
-sudo apt install nginx
-```
+Nginx was installed using Ubuntu's official package repository and verified through systemd before configuration changes were made.
 
 Verify the installation:
 
@@ -212,6 +209,17 @@ Using a single web server simplifies maintenance and avoids unnecessary services
 
 - https://nginx.org/en/docs/
 - https://documentation.ubuntu.com/server/
+
+---
+
+## File Locations
+
+| File | Purpose |
+|------|---------|
+| /etc/nginx/nginx.conf | Main Nginx configuration |
+| /etc/nginx/sites-available/techweb.com | Server block configuration |
+| /etc/nginx/sites-enabled/techweb.com | Enabled server block |
+| /var/www/html/ | Website files |
 
 ---
 
