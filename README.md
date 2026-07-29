@@ -52,13 +52,13 @@ Every configuration performed on this server is documented.
 
 | Document |
 |----------|
-| [00 - Network Topology](docs/00-network-topology.md) |
-| [01 - Static IP](docs/01-static-ip.md) |
-| [02 - SSH](docs/02-ssh.md) |
-| [03 - UFW](docs/03-ufw.md) |
-| [04 - Nginx](docs/04-nginx.md) |
-| [05 - Docker](docs/05-docker.md) |
-| [06 - System Backups](docs/06-system-backups.md) |
+| [00 - Network Topology]([docs/00-network-topology.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2000-network-topology.md)) |
+| [01 - Static IP]([docs/01-static-ip.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2001-static-ip.md)) |
+| [02 - SSH]([docs/02-ssh.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2002-ssh.md)) |
+| [03 - UFW]([docs/03-ufw.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2003-ufw.md)) |
+| [04 - Nginx]([docs/04-nginx.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2004-nginx.md)) |
+| [05 - Docker]([docs/05-docker.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2005-docker.md)) |
+| [06 - System Backups]([docs/06-system-backups.md](https://github.com/cabpoint/Ubuntu-Home-Server/blob/main/docs/%E2%94%9C%E2%94%80%E2%94%80%2006-backups.md)) |
 
 ---
 
