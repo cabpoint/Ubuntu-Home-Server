@@ -24,7 +24,7 @@ systemctl is-active nginx
 
 echo
 echo "SSH Status:"
-systemctl is-active ssh
+systemctl status ssh
 
 echo
 echo "Firewall Status:"
