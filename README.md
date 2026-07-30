@@ -21,13 +21,13 @@ A highly documented Ubuntu Server home lab built to learn Linux administration, 
 
 | Document |
 |----------|
-| [00 - Network Topology](docs/├──-00-network-topology.md) |
-| [01 - Static IP Configuration](docs/01-static-ip.md) |
-| [02 - SSH Configuration](docs/02-ssh.md) |
-| [03 - UFW Firewall](docs/03-ufw.md) |
-| [04 - Nginx Web Server](docs/04-nginx.md) |
-| [05 - Docker Installation](docs/05-docker.md) |
-| [06 - System Backups](docs/06-backups.md) |
+| [00 - Network Topology](docs/%E2%94%9C%E2%94%80%E2%94%80%2000-network-topology.md) |
+| [01 - Static IP Configuration](docs/%E2%94%9C%E2%94%80%E2%94%80%2001-static-ip.md) |
+| [02 - SSH Configuration](docs/%E2%94%9C%E2%94%80%E2%94%80%2002-ssh.md) |
+| [03 - UFW Firewall](docs/%E2%94%9C%E2%94%80%E2%94%80%2003-ufw.md) |
+| [04 - Nginx Web Server](docs/%E2%94%9C%E2%94%80%E2%94%80%2004-nginx.md) |
+| [05 - Docker Installation](docs/%E2%94%9C%E2%94%80%E2%94%80%2005-docker.md) |
+| [06 - System Backups](docs/%E2%94%9C%E2%94%80%E2%94%80%2006-backups.md) |
 
 ---
 
