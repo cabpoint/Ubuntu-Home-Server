@@ -21,7 +21,7 @@ A highly documented Ubuntu Server home lab built to learn Linux administration, 
 
 | Document |
 |----------|
-| [00 - Network Topology](docs/00-network-topology.md) |
+| [00 - Network Topology](docs/├──-00-network-topology.md) |
 | [01 - Static IP Configuration](docs/01-static-ip.md) |
 | [02 - SSH Configuration](docs/02-ssh.md) |
 | [03 - UFW Firewall](docs/03-ufw.md) |
