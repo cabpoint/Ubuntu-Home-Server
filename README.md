@@ -1,19 +1,6 @@
 # Ubuntu Home Server
 
-A highly documented Ubuntu Server project built to learn Linux system administration, networking, Docker, security and self-hosting.
-
----
-
-## Environment
-
-| Component | Value |
-|----------|-------|
-| Operating System | Ubuntu Server 26.04 LTS |
-| Virtualization | Oracle VirtualBox |
-| CPU | 4 vCPUs |
-| Memory | 4 GB |
-| Storage | 15 GB SSD |
-| Documentation | Markdown |
+A highly documented Ubuntu Server home lab built to learn Linux administration, networking, Docker and self-hosted infrastructure.
 
 ---
 
@@ -26,7 +13,7 @@ A highly documented Ubuntu Server project built to learn Linux system administra
 - Docker Engine
 - Docker Compose
 - Administration Scripts
-- System Documentation
+- Markdown Documentation
 
 ---
 
@@ -51,55 +38,3 @@ A highly documented Ubuntu Server project built to learn Linux system administra
 | `backup.sh` | Creates a compressed backup of important configuration files |
 | `health-check.sh` | Displays the current system health and service status |
 | `update.sh` | Updates installed packages |
-
----
-
-## Repository Structure
-
-```text
-Ubuntu-Home-Server/
-├── docs/
-│   ├── 00-network-topology.md
-│   ├── 01-static-ip.md
-│   ├── 02-ssh.md
-│   ├── 03-ufw.md
-│   ├── 04-nginx.md
-│   ├── 05-docker.md
-│   └── 06-backups.md
-│
-├── scripts/
-│   ├── backup.sh
-│   ├── health-check.sh
-│   └── update.sh
-│
-├── images/
-│
-├── .gitignore
-└── README.md
-```
-
----
-
-## Skills Demonstrated
-
-- Linux Administration
-- Ubuntu Server
-- Networking
-- SSH
-- Firewall Configuration
-- Nginx
-- Docker
-- Docker Compose
-- Bash Scripting
-- Git
-- Markdown Documentation
-
----
-
-## References
-
-- https://ubuntu.com/server/docs/
-- https://docs.docker.com/
-- https://nginx.org/en/docs/
-- https://wiki.archlinux.org/
-- https://www.gnu.org/software/bash/manual/
